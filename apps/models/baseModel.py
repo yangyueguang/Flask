@@ -1,6 +1,5 @@
 # coding: utf-8
 # @date: 2019-11-10
-# @author: xuechao@datagrand.com
 from sqlalchemy.ext.declarative import declarative_base
 from marshmallow_sqlalchemy import ModelSchema
 import datetime

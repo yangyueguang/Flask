@@ -1,6 +1,5 @@
 # coding: utf-8
 # @date: 2019-11-10
-# @author: xuechao@datagrand.com
 from functools import partial
 from flask import request
 from flask import jsonify

@@ -1,6 +1,5 @@
 # coding: utf-8
 # @date: 2019-11-10
-# @author: xuechao@datagrand.com
 from flask import Flask
 import threading
 from flask import jsonify

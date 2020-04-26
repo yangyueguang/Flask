@@ -25,18 +25,7 @@ class Report(object):
     @staticmethod
     def get_config():
         api_config = {
-            'idps': config.URL_IDPS,
-            'ocr': config.URL_OCR,
-            'search': config.URL_SEARCH,
-            'merge': config.URL_MERGE,
-            'nlp': {
-                'tongji': config.URL_TONGJI,
-                'text_process': config.URL_TEXT_PROCESS,
-                'preprocess': config.URL_PREPROCESS,
-                'tagging': config.URL_TAGGING,
-                'summary': config.URL_SUMMARY,
-                'knowledge': config.URL_KNOWLEDGE
-            }
+
         }
         return api_config
 
