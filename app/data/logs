@@ -1,2 +1,127 @@
 [32m[2020-07-17 15:53:45 dlog.dlog:53][92m --start to run logs upload server--
 [32m[2020-07-17 15:58:25 dlog.dlog:53][92m --start to run logs upload server--
+[32m[2020-07-17 16:03:24 dlog.dlog:53][92m --start to run logs upload server--
+[32m[2020-07-17 16:03:24 dlog.dlog:53][92m --start to run logs upload server--
+[32m[2020-07-17 16:04:41 dlog.dlog:53][92m --start to run logs upload server--
+[32m[2020-07-17 16:04:41 dlog.dlog:53][92m --start to run logs upload server--
+[32m[2020-07-17 16:04:41 dlog.dlog:53][92m --start to run logs upload server--
+[32m[2020-07-17 16:04:41 dlog.dlog:53][92m --start to run logs upload server--
+[32m[2020-07-17 16:04:41 dlog.dlog:53][92m --start to run logs upload server--
+[32m[2020-07-17 16:04:41 dlog.dlog:53][92m --start to run logs upload server--
+[32m[2020-07-17 16:04:41 dlog.dlog:53][92m --start to run logs upload server--
+[32m[2020-07-17 16:04:41 dlog.dlog:53][92m --start to run logs upload server--
+[32m[2020-07-17 16:04:41 dlog.dlog:53][92m --start to run logs upload server--
+[32m[2020-07-17 16:04:41 dlog.dlog:53][92m --start to run logs upload server--
+[32m[2020-07-17 16:04:41 dlog.dlog:53][92m --start to run logs upload server--
+[32m[2020-07-17 16:04:41 dlog.dlog:53][92m --start to run logs upload server--
+[32m[2020-07-17 16:09:11 dlog.dlog:53][92m --start to run logs upload server--
+[32m[2020-07-17 16:09:25 dlog.dlog:53][92m --start to run logs upload server--
+[32m[2020-07-17 16:09:25 _internal._log:113][92m  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[32m[2020-07-17 16:09:25 _internal._log:113][92m  * Restarting with stat
+[32m[2020-07-17 16:09:26 dlog.dlog:53][92m --start to run logs upload server--
+[33m[2020-07-17 16:09:26 _internal._log:113][92m  * Debugger is active!
+[32m[2020-07-17 16:09:26 _internal._log:113][92m  * Debugger PIN: 125-396-580
+[32m[2020-07-17 16:10:08 _internal._log:113][92m  * Detected change in '/Users/supers/Desktop/Flask/app/run.py', reloading
+[32m[2020-07-17 16:10:09 _internal._log:113][92m  * Restarting with stat
+[32m[2020-07-17 16:10:10 dlog.dlog:53][92m --start to run logs upload server--
+[33m[2020-07-17 16:10:10 _internal._log:113][92m  * Debugger is active!
+[32m[2020-07-17 16:10:10 _internal._log:113][92m  * Debugger PIN: 125-396-580
+[32m[2020-07-17 16:15:48 _internal._log:113][92m  * Detected change in '/Users/supers/Desktop/Flask/app/services/upload.py', reloading
+[32m[2020-07-17 16:15:48 _internal._log:113][92m  * Restarting with stat
+[32m[2020-07-17 16:15:50 dlog.dlog:53][92m --start to run logs upload server--
+[33m[2020-07-17 16:15:50 _internal._log:113][92m  * Debugger is active!
+[32m[2020-07-17 16:15:50 _internal._log:113][92m  * Debugger PIN: 125-396-580
+[32m[2020-07-17 16:18:21 _internal._log:113][92m  * Detected change in '/Users/supers/Desktop/Flask/app/services/upload.py', reloading
+[32m[2020-07-17 16:18:21 _internal._log:113][92m  * Restarting with stat
+[32m[2020-07-17 16:18:22 dlog.dlog:53][92m --start to run logs upload server--
+[33m[2020-07-17 16:18:22 _internal._log:113][92m  * Debugger is active!
+[32m[2020-07-17 16:18:22 _internal._log:113][92m  * Debugger PIN: 125-396-580
+[32m[2020-07-17 16:21:16 _internal._log:113][92m 127.0.0.1 - - [17/Jul/2020 16:21:16] "[33mGET / HTTP/1.1[0m" 404 -
+[32m[2020-07-17 16:21:17 _internal._log:113][92m 127.0.0.1 - - [17/Jul/2020 16:21:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[32m[2020-07-17 16:21:39 dlog.dlog:53][92m --start to run logs upload server--
+[32m[2020-07-17 16:21:39 _internal._log:113][92m  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[32m[2020-07-17 16:21:39 _internal._log:113][92m  * Restarting with stat
+[32m[2020-07-17 16:21:41 dlog.dlog:53][92m --start to run logs upload server--
+[33m[2020-07-17 16:21:41 _internal._log:113][92m  * Debugger is active!
+[32m[2020-07-17 16:21:41 _internal._log:113][92m  * Debugger PIN: 125-396-580
+[32m[2020-07-17 16:22:01 _internal._log:113][92m 127.0.0.1 - - [17/Jul/2020 16:22:01] "[31m[1mPOST /extract HTTP/1.1[0m" 400 -
+[32m[2020-07-17 16:24:13 _internal._log:113][92m 127.0.0.1 - - [17/Jul/2020 16:24:13] "[31m[1mPOST /extract HTTP/1.1[0m" 400 -
+[32m[2020-07-17 16:24:36 _internal._log:113][92m 127.0.0.1 - - [17/Jul/2020 16:24:36] "[31m[1mPOST /extract HTTP/1.1[0m" 400 -
+[32m[2020-07-17 16:24:47 _internal._log:113][92m 127.0.0.1 - - [17/Jul/2020 16:24:47] "[31m[1mPOST /extract HTTP/1.1[0m" 400 -
+[32m[2020-07-17 16:24:53 _internal._log:113][92m 127.0.0.1 - - [17/Jul/2020 16:24:53] "[31m[1mPOST /extract HTTP/1.1[0m" 400 -
+[32m[2020-07-17 16:26:00 _internal._log:113][92m 127.0.0.1 - - [17/Jul/2020 16:26:00] "[31m[1mGET /extract?time=234 HTTP/1.1[0m" 405 -
+[32m[2020-07-17 16:26:34 _internal._log:113][92m 127.0.0.1 - - [17/Jul/2020 16:26:34] "[31m[1mPOST /extract HTTP/1.1[0m" 400 -
+[32m[2020-07-17 16:26:40 _internal._log:113][92m 127.0.0.1 - - [17/Jul/2020 16:26:40] "[31m[1mGET /extract?time=234 HTTP/1.1[0m" 405 -
+[32m[2020-07-17 16:27:05 _internal._log:113][92m 127.0.0.1 - - [17/Jul/2020 16:27:05] "[31m[1mPOST /extract?time=234 HTTP/1.1[0m" 400 -
+[32m[2020-07-17 16:27:18 _internal._log:113][92m 127.0.0.1 - - [17/Jul/2020 16:27:18] "[31m[1mPOST /extract?time=234 HTTP/1.1[0m" 400 -
+[32m[2020-07-17 16:27:24 dlog.dlog:53][92m --start to run logs upload server--
+[32m[2020-07-17 16:27:24 _internal._log:113][92m  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[32m[2020-07-17 16:27:24 _internal._log:113][92m  * Restarting with stat
+[32m[2020-07-17 16:27:26 dlog.dlog:53][92m --start to run logs upload server--
+[33m[2020-07-17 16:27:26 _internal._log:113][92m  * Debugger is active!
+[32m[2020-07-17 16:27:26 _internal._log:113][92m  * Debugger PIN: 125-396-580
+[32m[2020-07-17 16:27:28 _internal._log:113][92m 127.0.0.1 - - [17/Jul/2020 16:27:28] "[31m[1mPOST /extract?time=234 HTTP/1.1[0m" 400 -
+[32m[2020-07-17 16:33:40 dlog.dlog:53][92m --start to run logs upload server--
+[32m[2020-07-17 16:33:40 _internal._log:113][92m  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[32m[2020-07-17 16:33:40 _internal._log:113][92m  * Restarting with stat
+[32m[2020-07-17 16:33:42 dlog.dlog:53][92m --start to run logs upload server--
+[33m[2020-07-17 16:33:42 _internal._log:113][92m  * Debugger is active!
+[32m[2020-07-17 16:33:42 _internal._log:113][92m  * Debugger PIN: 125-396-580
+[32m[2020-07-17 16:34:14 dlog.dlog:53][92m --start to run logs upload server--
+[32m[2020-07-17 16:34:14 _internal._log:113][92m  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[32m[2020-07-17 16:34:14 _internal._log:113][92m  * Restarting with stat
+[32m[2020-07-17 16:34:16 dlog.dlog:53][92m --start to run logs upload server--
+[33m[2020-07-17 16:34:16 _internal._log:113][92m  * Debugger is active!
+[32m[2020-07-17 16:34:16 _internal._log:113][92m  * Debugger PIN: 125-396-580
+[32m[2020-07-17 16:34:27 _internal._log:113][92m 127.0.0.1 - - [17/Jul/2020 16:34:27] "[31m[1mPOST /extract?time=234 HTTP/1.1[0m" 400 -
+[32m[2020-07-17 16:34:50 _internal._log:113][92m 127.0.0.1 - - [17/Jul/2020 16:34:50] "[31m[1mPOST /extract?time=234 HTTP/1.1[0m" 400 -
+[32m[2020-07-17 16:40:19 dlog.dlog:53][92m --start to run logs upload server--
+[32m[2020-07-17 16:40:19 _internal._log:113][92m  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[32m[2020-07-17 16:40:19 _internal._log:113][92m  * Restarting with stat
+[32m[2020-07-17 16:40:21 dlog.dlog:53][92m --start to run logs upload server--
+[33m[2020-07-17 16:40:21 _internal._log:113][92m  * Debugger is active!
+[32m[2020-07-17 16:40:21 _internal._log:113][92m  * Debugger PIN: 125-396-580
+[32m[2020-07-17 16:41:55 dlog.dlog:53][92m --start to run logs upload server--
+[32m[2020-07-17 16:41:55 _internal._log:113][92m  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[32m[2020-07-17 16:41:55 _internal._log:113][92m  * Restarting with stat
+[32m[2020-07-17 16:41:57 dlog.dlog:53][92m --start to run logs upload server--
+[33m[2020-07-17 16:41:57 _internal._log:113][92m  * Debugger is active!
+[32m[2020-07-17 16:41:57 _internal._log:113][92m  * Debugger PIN: 125-396-580
+[32m[2020-07-17 16:42:06 _internal._log:113][92m 127.0.0.1 - - [17/Jul/2020 16:42:06] "[31m[1mPOST /extract?time=234 HTTP/1.1[0m" 400 -
+[32m[2020-07-17 16:42:50 dlog.dlog:53][92m --start to run logs upload server--
+[32m[2020-07-17 16:42:51 _internal._log:113][92m  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[32m[2020-07-17 16:42:51 _internal._log:113][92m  * Restarting with stat
+[32m[2020-07-17 16:42:52 dlog.dlog:53][92m --start to run logs upload server--
+[33m[2020-07-17 16:42:52 _internal._log:113][92m  * Debugger is active!
+[32m[2020-07-17 16:42:52 _internal._log:113][92m  * Debugger PIN: 125-396-580
+[32m[2020-07-17 16:44:15 dlog.dlog:53][92m --start to run logs upload server--
+[32m[2020-07-17 16:44:15 _internal._log:113][92m  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[32m[2020-07-17 16:44:15 _internal._log:113][92m  * Restarting with stat
+[32m[2020-07-17 16:44:17 dlog.dlog:53][92m --start to run logs upload server--
+[33m[2020-07-17 16:44:17 _internal._log:113][92m  * Debugger is active!
+[32m[2020-07-17 16:44:17 _internal._log:113][92m  * Debugger PIN: 125-396-580
+[32m[2020-07-17 16:44:24 _internal._log:113][92m 127.0.0.1 - - [17/Jul/2020 16:44:24] "[35m[1mPOST /extract?time=234 HTTP/1.1[0m" 500 -
+[32m[2020-07-17 16:47:11 dlog.dlog:53][92m --start to run logs upload server--
+[32m[2020-07-17 16:47:11 _internal._log:113][92m  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[32m[2020-07-17 16:47:11 _internal._log:113][92m  * Restarting with stat
+[32m[2020-07-17 16:47:13 dlog.dlog:53][92m --start to run logs upload server--
+[33m[2020-07-17 16:47:13 _internal._log:113][92m  * Debugger is active!
+[32m[2020-07-17 16:47:13 _internal._log:113][92m  * Debugger PIN: 125-396-580
+[32m[2020-07-17 16:47:28 _internal._log:113][92m 127.0.0.1 - - [17/Jul/2020 16:47:28] "[35m[1mPOST /extract?time=234 HTTP/1.1[0m" 500 -
+[32m[2020-07-17 16:47:53 dlog.dlog:53][92m --start to run logs upload server--
+[32m[2020-07-17 16:47:53 _internal._log:113][92m  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[32m[2020-07-17 16:47:53 _internal._log:113][92m  * Restarting with stat
+[32m[2020-07-17 16:47:55 dlog.dlog:53][92m --start to run logs upload server--
+[33m[2020-07-17 16:47:55 _internal._log:113][92m  * Debugger is active!
+[32m[2020-07-17 16:47:55 _internal._log:113][92m  * Debugger PIN: 125-396-580
+[32m[2020-07-17 16:49:35 _internal._log:113][92m  * Detected change in '/Users/supers/Desktop/Flask/app/services/upload.py', reloading
+[32m[2020-07-17 16:49:36 _internal._log:113][92m  * Restarting with stat
+[32m[2020-07-17 16:49:38 dlog.dlog:53][92m --start to run logs upload server--
+[33m[2020-07-17 16:49:38 _internal._log:113][92m  * Debugger is active!
+[32m[2020-07-17 16:49:38 _internal._log:113][92m  * Debugger PIN: 125-396-580
+[32m[2020-07-17 16:50:28 dlog.dlog:53][92m --start to run logs upload server--
+[32m[2020-07-17 16:50:28 _internal._log:113][92m  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[32m[2020-07-17 16:50:28 _internal._log:113][92m  * Restarting with stat
+[32m[2020-07-17 16:50:30 dlog.dlog:53][92m --start to run logs upload server--
+[33m[2020-07-17 16:50:30 _internal._log:113][92m  * Debugger is active!
+[32m[2020-07-17 16:50:30 _internal._log:113][92m  * Debugger PIN: 125-396-580

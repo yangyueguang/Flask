@@ -5,11 +5,9 @@ import sys
 
 import multiprocessing
 
-bind = '0.0.0.0:3001'
+bind = '0.0.0.0:8000'
 workers = os.environ.get('WORKERS', multiprocessing.cpu_count())
 threads = os.environ.get('THREADS', 1 if multiprocessing.cpu_count() == 1 else 2)
-print('WORKERS: {}'.format(workers))
-print('THREADS: {}'.format(threads))
 CURR_PATH = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(CURR_PATH)
 IS_DEBUG = True

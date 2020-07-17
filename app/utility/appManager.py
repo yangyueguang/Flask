@@ -14,7 +14,7 @@ from app.utility.dlog import dlog
 
 def create_app():
     dlog('--start to run logs upload server--')
-    flask_app = Flask(__name__, template_folder='data/templates')
+    flask_app = Flask(__name__, template_folder='data/static')
     # redis_db.connect_redis()
     load_conf(flask_app)
     # 跨域请求设置
