@@ -4,13 +4,14 @@ from flask import request
 import os
 import datetime
 import json
+import traceback
 from flask_restful import reqparse
-from apps import config
-from apps.services.baseResp import BaseResp
-from apps.utility.dlog import logger
+from app import config
+from app.services.baseResp import BaseResp
+from app.utility.dlog import dlog
 
 
-class ChangeTimeInteval(BaseResp):
+class PdfExtract(BaseResp):
 
     def post(self):
         parser = reqparse.RequestParser()
@@ -18,10 +19,10 @@ class ChangeTimeInteval(BaseResp):
         args = parser.parse_args()
         try:
             time_str = args['time']
-            with open(os.path.join(config.CURR_PATH, 'static/time_report_interval.txt'), 'w') as f:
+            with open(os.path.join(config.CURR_PATH, 'data/time_report_interval.txt'), 'w') as f:
                 f.write(str(time_str))
             return self.resp(data={'result': 'OK'})
         except Exception as e:
-            logger.error(e)
+            dlog(traceback.format_exc(), True)
             return self.resp(code=500, message='服务器内部错误', data=None)
 

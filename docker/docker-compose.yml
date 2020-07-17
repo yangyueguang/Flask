@@ -2,13 +2,12 @@ version: '3'
 services:
   logs_upload:
     image: yangyueguang/flask:2020042615
-#    command: python3 run.py runserver -h 0.0.0.0 -p 5001 --threaded
     restart: always
     ports:
-      - 18002:5001
+      - 8000:5001
     volumes:
-      - ./data/logs:/apps/logs
+      - ./data/logs:/app/logs
     environment:
-      - HOST=127.0.0.1
-      - PORT=15800
+      - WORKERS=2
+      - THREADS=2
 

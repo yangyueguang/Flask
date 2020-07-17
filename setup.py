@@ -12,7 +12,7 @@ except:
     print("You don't seem to have Cython installed. Please get a")
     sys.exit(1)
 
-SRC_DIR = "apps"
+SRC_DIR = "app"
 MODULE_NAME = "logs"
 IGNORE_FILES = ["__init__.py", "run.py", "main.py", "server.py"]
 

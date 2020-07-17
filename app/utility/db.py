@@ -5,11 +5,11 @@ import redis
 from flask import _app_ctx_stack, current_app
 from sqlalchemy import create_engine, orm
 from sqlalchemy_utils.functions import database_exists, create_database, drop_database
-from apps.models import Base
-import apps.config
+from app.models import Base
+import app.config
 
 isOpen = 1 #0关闭1开启
-engine = create_engine(apps.config.SQLALCHEMY_DATABASE_URI)
+engine = create_engine(app.config.SQLALCHEMY_DATABASE_URI)
 DBSession = orm.sessionmaker(bind=engine, autocommit=False, autoflush=False)
 session = DBSession()
 
@@ -41,17 +41,11 @@ def create_all_tables():
 
 
 def create_tables(*models):
-    """
-    pass models list or tuple, eg: models=(User, Role, ...)
-    """
     for model in models:
         model.__table__.create(engine)
 
 
 def drop_tables(*models):
-    """
-    pass models list or tuple, eg: models=(User, Role, ...)
-    """
     for model in models:
         try:
             model.__table__.drop(engine)
@@ -79,18 +73,18 @@ def session_flush():
 
 
 def init_database_tables(app):
-    app.config['SQLALCHEMY_DATABASE_URI'] = apps.config.SQLALCHEMY_DATABASE_URI
+    app.config['SQLALCHEMY_DATABASE_URI'] = app.config.SQLALCHEMY_DATABASE_URI
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
     app.config['SQLALCHEMY_BINDS'] = None
-    if not database_exists(apps.config.SQLALCHEMY_DATABASE_URI):
-        create_database(apps.config.SQLALCHEMY_DATABASE_URI)
+    if not database_exists(app.config.SQLALCHEMY_DATABASE_URI):
+        create_database(app.config.SQLALCHEMY_DATABASE_URI)
     create_all_tables()
 
 
 def reinit_database_tables():
-    if database_exists(apps.config.SQLALCHEMY_DATABASE_URI):
-        drop_database(apps.config.SQLALCHEMY_DATABASE_URI)
-    create_database(apps.config.SQLALCHEMY_DATABASE_URI)
+    if database_exists(app.config.SQLALCHEMY_DATABASE_URI):
+        drop_database(app.config.SQLALCHEMY_DATABASE_URI)
+    create_database(app.config.SQLALCHEMY_DATABASE_URI)
     create_all_tables()
 
 

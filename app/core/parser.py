@@ -6,17 +6,12 @@ from webargs.flaskparser import FlaskParser as OriginalFlaskParser
 
 
 def bind(**kwargs):
-    """
-    绑定参数到接口方法上
-    """
-
     def wrapper(func):
         for key, val in kwargs.items():
             if getattr(func, key, None):
                 raise RuntimeError()
             setattr(func, key, val)
         return func
-
     return wrapper
 
 

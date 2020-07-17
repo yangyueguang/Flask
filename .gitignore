@@ -6,8 +6,8 @@ __pycache__/
 # C extensions
 *.so
 build
-apps/logs
-apps/static/time_report_interval.txt
+app/logs
+app/data/time_report_interval.txt
 deploy/data
 # Distribution / packaging
 .Python

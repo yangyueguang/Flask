@@ -3,18 +3,18 @@
 from flask import Flask
 import threading
 from flask import jsonify
-from apps.models import *
-# import apps.utility.db as db
-from apps.core import routes
+from app.models import *
+# import app.utility.db as db
+from app.core import routes
 from flask_cors import CORS
-import apps.config as st
-# from apps.utility import redis_db
-from apps.utility.dlog import logger
+import app.config as st
+# from app.utility import redis_db
+from app.utility.dlog import dlog
 
 
-def create_app(ENV):
-    logger.info('--start to run logs upload server--')
-    flask_app = Flask(__name__, template_folder='static/templates')
+def create_app():
+    dlog('--start to run logs upload server--')
+    flask_app = Flask(__name__, template_folder='data/templates')
     # redis_db.connect_redis()
     load_conf(flask_app)
     # 跨域请求设置
@@ -49,7 +49,7 @@ def register_endpoints(flask_app):
     """
     注册所有的路由端点,蓝图
     """
-    from apps.services import apptest
+    from app.services import apptest
     flask_app.register_blueprint(apptest, url_prefix='')
 
 

@@ -2,10 +2,10 @@
 # @date: 2019-11-10
 
 from flask_restful import Api
-from apps.services import *
+from app.services import *
 
 routes = {
-    '/change_time_inteval': ChangeTimeInteval  # 修改循环时间
+    '/extract': PdfExtract
 }
 
 

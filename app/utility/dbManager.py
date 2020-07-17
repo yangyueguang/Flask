@@ -66,8 +66,7 @@ def datalist_format(reslist):
         return reslist
     for item in reslist:
         for key in item.keys():
-            if isinstance(item[key], datetime.datetime) \
-                    or isinstance(item[key], datetime.date):
+            if isinstance(item[key], datetime.datetime) or isinstance(item[key], datetime.date):
                 item[key] = str(item[key])
             if isinstance(item[key], decimal.Decimal):
                 item[key] = float(item[key])
