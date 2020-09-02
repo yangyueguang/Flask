@@ -3,6 +3,8 @@
 [Flask](https://dormousehole.readthedocs.io/en/latest/)
 
 *************
+### 静态扫描
+`sonar-scanner -Dproject.settings=./sonar.properties`
 ### 性能测试
 #### 默认启动方式性能测试
 Mac上执行命令安装siege, 并发测试命令。

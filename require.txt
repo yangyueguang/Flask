@@ -1,6 +1,0 @@
-numpy
-typing>=3.6.6
-python-docx==0.8.10
-sentry-sdk==0.16.2
-PyMuPDF
-raven
