@@ -14,5 +14,3 @@ EXPOSE 5000
 CMD gunicorn run:app -c config.py
 #ENTRYPOINT celery -A tasks worker --loglevel=info
 #CMD ["gunicorn", "--bind", "0.0.0.0:5001", "--workers", "3", "app:app"]
-#数据迁移
-#CMD sh migrate.sh

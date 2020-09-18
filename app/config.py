@@ -11,6 +11,9 @@ threads = os.environ.get('THREADS', 1 if multiprocessing.cpu_count() == 1 else 2
 CURR_PATH = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(CURR_PATH)
 IS_DEBUG = True
+# 如果部署的时候开启了debug模式, 可以启用auto_reload
+reload = True
+
 LOG_PATH = os.path.join(CURR_PATH, 'data/logs')
 # redis conf
 REDIS_CONF = {

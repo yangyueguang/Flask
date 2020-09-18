@@ -11,7 +11,7 @@ import app.config
 isOpen = 1 #0关闭1开启
 engine = create_engine(app.config.SQLALCHEMY_DATABASE_URI)
 DBSession = orm.sessionmaker(bind=engine, autocommit=False, autoflush=False)
-session = DBSession()
+session = DBSession()w
 
 
 class ScopedSession(orm.scoped_session):

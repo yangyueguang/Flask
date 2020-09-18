@@ -1,4 +1,17 @@
-# 这是日志数据上报系统
+# 这是Flask框架
+
+
+#数据迁移
+```bash
+python3 run.py db init
+python3 run.py db migrate
+python3 run.py db upgrade
+python3 run.py db downgrade
+
+flask db init
+flask db migrate
+flask db upgrade
+```
 [接口文档](https://my.apipost.cn/doc?project_id=35275#195056)
 [Flask](https://dormousehole.readthedocs.io/en/latest/)
 
