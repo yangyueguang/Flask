@@ -5,6 +5,8 @@ from concurrent.futures import ThreadPoolExecutor
 
 
 def request(method, url, params=None, data=None, retry=1, message="", timeout=60 * 10, **kwargs):
+    dlog(f'start request: {url}')
+    dlog(params)
     res = None
     while retry > 0:
         try:
