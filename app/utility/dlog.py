@@ -38,16 +38,13 @@ class Dlog(RootLogger):
     def __new__(cls, *args, **kwargs):
         if not Dlog._instance:
             with Dlog._instance_lock:
-                max_bytes = 500 * 1024 * 1024
-                channel = logging.handlers.RotatingFileHandler(
-                    filename=conf.LOG_PATH,
-                    maxBytes=max_bytes,
-                    backupCount=5)
+                handler = logging.handlers.TimedRotatingFileHandler(filename=conf.LOG_PATH, when="D", backupCount=100)
+                handler.suffix = "%Y-%m-%d.log"
                 fmt = LogFormatter()
-                channel.setFormatter(fmt)
+                handler.setFormatter(fmt)
                 log = logging.getLogger()
                 log.setLevel(logging.INFO)
-                log.addHandler(channel)
+                log.addHandler(handler)
                 if conf.IS_DEBUG:
                     console = logging.StreamHandler()
                     console.setFormatter(fmt)
