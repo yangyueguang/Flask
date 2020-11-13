@@ -3,10 +3,12 @@ import logging
 import logging.handlers
 import app.config as conf
 import colorama
+import threading
+from logging import RootLogger
 
 
 class LogFormatter(logging.Formatter):
-    def __init__(self, color=True):
+    def __init__(self):
         logging.Formatter.__init__(self, fmt='%(message)s', datefmt='%Y-%m-%d %H:%M:%S')
 
     def format(self, record):
@@ -29,21 +31,32 @@ class LogFormatter(logging.Formatter):
         return formatted
 
 
-def Dlog(filename: str, max_bytes=500*1024*1024, stdout=False, backup_count=5):
-    log = logging.getLogger()
-    log.setLevel(logging.INFO)
-    fmt = LogFormatter()
-    channel = logging.handlers.RotatingFileHandler(filename=filename, maxBytes=max_bytes, backupCount=backup_count)
-    channel.setFormatter(fmt)
-    log.addHandler(channel)
-    if stdout:
-        console = logging.StreamHandler()
-        console.setFormatter(fmt)
-        log.addHandler(console)
-    return log
+class Dlog(RootLogger):
+    _instance_lock = threading.Lock()
+    _instance = None
+
+    def __new__(cls, *args, **kwargs):
+        if not Dlog._instance:
+            with Dlog._instance_lock:
+                max_bytes = 500 * 1024 * 1024
+                channel = logging.handlers.RotatingFileHandler(
+                    filename=conf.LOG_PATH,
+                    maxBytes=max_bytes,
+                    backupCount=5)
+                fmt = LogFormatter()
+                channel.setFormatter(fmt)
+                log = logging.getLogger()
+                log.setLevel(logging.INFO)
+                log.addHandler(channel)
+                if conf.IS_DEBUG:
+                    console = logging.StreamHandler()
+                    console.setFormatter(fmt)
+                    log.addHandler(console)
+                Dlog._instance = log
+        return Dlog._instance
 
 
-logger_obj = Dlog(filename=conf.LOG_PATH, stdout=conf.IS_DEBUG)
+logger_obj = Dlog()
 
 
 def dlog(message, is_error=False, *args, **kwargs):
